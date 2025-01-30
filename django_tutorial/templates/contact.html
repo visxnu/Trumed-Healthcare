@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact - Trumed Healthcare
+{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<h1 class="page-title">Contact Us</h1>
+
+<div class="contact-container">
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <h2>More Info</h2>
+        <p>If you have any inquiries, feel free to reach out to us!</p>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Call Us:</h3>
+            <ul>
+                <li>+91 919 345 2222</li>
+                <li>0467 2238 222</li>
+                <li>0467 2080 222</li>
+            </ul>
+
+            <h3>Email:</h3>
+            <ul>
+                <li><a href="mailto:trumedhealth.3@gmail.com">trumedhealth.3@gmail.com</a></li>
+            </ul>
+
+            <h3>Follow Us:</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/trumedhealthcare" target="_blank">trumedhealthcare (Instagram)</a></li>
+                <li><a href="https://www.facebook.com/trumedhealthcareksd" target="_blank">trumedhealthcareksd (Facebook)</a></li>
+            </ul>
+        </div>
+
+        <h3>Location</h3>
+        <p>Old Roa's Clinic, Near Kottikulam Railway Station, Palakunnu.</p>
+        <p>Bekal-671318</p>
+
+        <h3>Multi-Speciality Medical Centre</h3>
+    </div>
+</div>
+
+<style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Title Styling */
+.page-title {
+    text-align: center;
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Container for Contact Info */
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Contact Info Box */
+.contact-info {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and Subheading Styles */
+.contact-info h2, .contact-info h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.contact-info p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Contact Details Section */
+.contact-details {
+    margin-top: 20px;
+}
+
+/* Unordered List Styling */
+.contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* List Item Styling */
+.contact-details ul li {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.contact-details a {
+    text-decoration: none;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #3498db;
+}
+
+/* Location and Footer Styling */
+.contact-info h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .contact-info h2, .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .contact-details ul li {
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+}
+</style>
+
+{% endblock %}

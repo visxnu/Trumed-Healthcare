@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Make An Appointment</h1>
+<hr>
+<div class="container w-50 text-center p-3 my-5 bg-info">
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <!-- Loop through form fields and add classes dynamically -->
+        {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}" aria-label="{{ field.label }}">
+                    {{ field.label }}
+                </label>
+                
+                <!-- Add form-control class using widget_tweaks add_class filter -->
+                {{ field|add_class:"form-control" }}
+
+                <!-- Display errors if any -->
+                <div class="text-danger">
+                    {% if field.errors %}
+                        {% for error in field.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        
+        <br>
+        
+        <!-- Submit and Reset Buttons -->
+        <button class="btn btn-primary mb-4" type="submit">Submit</button>
+        <button class="btn btn-secondary" type="reset">Reset</button>
+
+    </form>
+    
+    <!-- Success Message (If the form is valid) -->
+    {% if form.is_valid %}
+        <div class="alert alert-success mt-3">
+            Your appointment has been successfully booked!
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

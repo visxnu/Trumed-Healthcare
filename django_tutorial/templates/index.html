@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dental Clinic - Welcome
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Hero Section with a Welcome Message -->
+<section class="hero-section text-center py-5 bg-light">
+    <div class="container">
+        <h1 class="display-4 text-primary">Welcome to TruMed HEALTH CARE</h1>
+        <p class="lead text-muted">Aiming For Good Health.</p>
+        <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+    </div>
+</section>
+
+
+<!-- Static Banner Section -->
+<section class="static-banner text-center py-5 bg-primary text-white">
+    <div class="container">
+        <h2 class="display-5">Welcome to Our Medical Center</h2>
+        <p class="lead">Providing the best care for your health and wellbeing.</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h4>Patient-Centered Care</h4>
+                <p>Your health is our top priority. Come visit us today!</p>
+                <a href="{% url 'booking' %}" class="btn btn-light">Book an Appointment</a>
+            </div>
+            <div class="col-md-4">
+                <h4>Experienced Professionals</h4>
+                <p>Our team of skilled doctors is ready to help you.</p>
+                <a href="{% url 'doctors' %}" class="btn btn-light">Meet Our Doctors</a>
+            </div>
+            <div class="col-md-4">
+                <h4>Comprehensive Services</h4>
+                <p>Explore our wide range of dental services tailored for you.</p>
+                <a href="#services" class="btn btn-light">Explore Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Services Section -->
+<section id="services" class="services-section text-center py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box p-4 mb-4 bg-white rounded shadow">
+                    <h4>Ultrasound Scanning</h4>
+                    <p>In our hospital, we use ultrasound scanning as a safe and non-invasive imaging technique to examine internal organs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box p-4 mb-4 bg-white rounded shadow">
+                    <h4>Pharmacy</h4>
+                    <p>At our pharmacy, we are committed to providing high-quality medicines and healthcare products to support your well-being</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box p-4 mb-4 bg-white rounded shadow">
+                    <h4>X-Ray & Laboratory Services</h4>Our state-of-the-art X-ray facility provides clear and detailed imaging to help detect fractures, infections, and other medical conditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Patients Say</h2>
+        <div class="carousel slide" data-bs-ride="carousel" id="testimonialCarousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial text-center">
+                        <p>"There are good facilities, casualty, ultrasound scanning, X-ray, lab,
+                            Radiology, orthopedic, pediatric, ent, pulmonology, psychiatry, obstetrics and gynaecology, surgery"</p>
+                        <footer>- Suresh Thekkekara.</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p>"I had a wonderful experience at TruMed. The doctors and staff were kind, professional, and attentive throughout my treatment."</p>
+                        <footer>- Ubaid A Rahiman.</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <p>" had an outstanding experience at TruMed. From the moment I walked in, I was greeted with warmth and professionalism. The doctors, nurses, and staff were incredibly caring, attentive, and highly skilled."</p>
+                        <footer>- Ashok Palakunnu.</footer>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

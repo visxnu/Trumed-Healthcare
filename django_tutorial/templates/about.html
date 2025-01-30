@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Trumed Healthcare{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Trumed Healthcare</h1>
+            <p>Your trusted partner in healthcare innovation and excellence.</p>
+        </div>
+    </section>
+    
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>Trumed Healthcare is dedicated to providing world-class medical solutions with a commitment to innovation, quality, and patient well-being. We strive to bridge the gap between cutting-edge technology and accessible healthcare.</p>
+            <p>Our expertise spans artificial intelligence (AI)-driven diagnostics, Explainable AI (XAI) for transparency, and causality analysis to improve treatment outcomes.</p>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>We aim to revolutionize the healthcare industry by integrating advanced medical technologies with compassionate care, ensuring the highest standards for every patient.</p>
+            <p>By leveraging AI-powered insights, machine learning models, and predictive analytics, we empower medical professionals to make informed decisions with confidence.</p>
+        </div>
+    </section>
+
+    <section class="technology-section">
+        <div class="technology-content">
+            <h2>Our Technology</h2>
+            <p>At Trumed Healthcare, we harness the power of Explainable AI (XAI) to ensure that medical professionals understand and trust AI-driven decisions. Our causality-based research aids in identifying real-world treatment effects, minimizing risks, and personalizing patient care.</p>
+            <p>We also focus on real-time health monitoring, AI-assisted diagnostics, and automated clinical decision support to enhance patient outcomes.</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .about-container {
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+    }
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/healthcare.jpg') center/cover no-repeat;
+        padding: 100px 20px;
+        color: #fff;
+    }
+    .hero-content {
+        max-width: 800px;
+        margin: auto;
+    }
+    .about-section, .mission-section, .technology-section {
+        padding: 50px 20px;
+        background: #f9f9f9;
+    }
+    .about-content, .mission-content, .technology-content {
+        max-width: 800px;
+        margin: auto;
+    }
+    h1, h2 {
+        color: #007bff;
+    }
+</style>
+{% endblock %}

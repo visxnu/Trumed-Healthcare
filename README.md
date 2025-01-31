@@ -2,13 +2,13 @@
 
 ## Overview
 
-Trumed-Healthcare is a web-based application designed to [provide a brief description of the application's purpose, e.g., "manage patient records efficiently" or "facilitate appointment scheduling for healthcare providers"]. Built with Django, a high-level Python web framework, the application ensures rapid development and a clean, pragmatic design.
+Trumed-Healthcare is a web-based application designed to a healthcare center. Built with Django, a high-level Python web framework, the application ensures rapid development and a clean, pragmatic design.
 
 ## Features
 
-- **Patient Management**: [Detail features like patient registration, record updates, etc.]
-- **Appointment Scheduling**: [Detail features like booking, calendar integration, etc.]
-- **[Additional Feature]**: [Provide details]
+- **Patient Management**: Allow the patient to access the appointments
+- **Appointment Scheduling**: Allows patients to know is a specific doctor is available or not
+
 
 ## Installation
 
@@ -43,9 +43,6 @@ To set up the project locally:
 
 Access the application at `http://127.0.0.1:8000/`.
 
-## Usage
-
-[Provide instructions on how to use the application, including any initial setup, user roles, or key functionalities.]
 
 ## Contributing
 
@@ -57,13 +54,10 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch: `git push origin feature/YourFeature`.
 5. Open a pull request.
 
-## License
-
-[Specify the license under which the project is distributed, e.g., MIT License. If undecided, you can mention that the license will be added later.]
 
 ## Contact
 
-For questions or feedback, please reach out to [Your Name] at [your.email@example.com].
+For questions or feedback, please reach out to vishnu at vishnuu1690@gmail.com
 
 ```
 
